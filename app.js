@@ -1,12 +1,7 @@
 const express = require('express');
 const db = require('./db/db');
 const bodyParser = require('body-parser');
-const http = require('https');
 
-
-http.createServer().listen(process.env.PORT || 5000).on('request', function(req, res){
-  res.end('')
-});
 
 const app = express();
 db.checkConnection();
@@ -140,4 +135,4 @@ app.delete(`/deleteList:id`, async function(req, res) {
 });
 
 
-// app.listen(3000);
+app.listen(3000);
