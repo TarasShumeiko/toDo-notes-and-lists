@@ -1,3 +1,3 @@
-# to-do-list-and-notes
-1. Run **__`node app`__** in terminal or command line to start a project
-2. The project will be at **_http://localhost:3000_**# toDo-notes-and-lists
+# toDo-list-and-notes
+1. Run `node app` in terminal or command line to start a project
+2. The project will be at http://localhost:3000
