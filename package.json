@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lukewarm92/to-do-list-and-notes.git"
+    "url": "git+https://github.com/TarasShumeiko/toDo-notes-and-lists.git"
   },
   "author": "Taras",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/lukewarm92/to-do-list-and-notes/issues"
+    "url": "https://github.com/TarasShumeiko/toDo-notes-and-lists/issues"
   },
-  "homepage": "https://github.com/lukewarm92/to-do-list-and-notes#readme",
+  "homepage": "https://github.com/TarasShumeiko/toDo-notes-and-lists#readme",
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
