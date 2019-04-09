@@ -4,7 +4,7 @@
   "description": "step-project",
   "main": "app.js",
   "scripts": {
-    "start": "PORT=3000 node app.js"
+    "start": "node app.js"
   },
   "engines": {
     "node": "10.15.3"
