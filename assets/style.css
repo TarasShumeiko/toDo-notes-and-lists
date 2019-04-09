@@ -1,0 +1,154 @@
+body > div {
+    background: #4f4d49;
+    min-width: 100%;
+    overflow: auto;
+}
+h2 {
+    color: #e1dfd2;
+}
+.container {
+    background: #4f4d49;
+    height: 100%;
+}
+.fas {
+    transform: scale(2.5);
+    color: #660021;
+}
+.fa-arrow-alt-circle-left {
+    position: relative;
+    top: 2px;
+}
+.fa-check-circle {
+    transform: scale(2.5);
+    color: #420066;
+}
+#list {
+    background: #cbb6b3;
+}
+#list div{
+    border-bottom: 1px solid rgba(160, 160, 160, 0.45);
+    overflow: hidden;
+}
+#input-text {
+    display: inline;
+}
+input.btn-success {
+    display: inline;
+}
+#completed-tasks {
+    background: #656360;
+    overflow: hidden;
+}
+#completed-tasks div {
+    text-decoration: line-through;
+}
+.all-notes {
+    background: #faff86;
+    height: 80px;
+    overflow: hidden;
+}
+.all-notes:hover {
+    cursor: pointer;
+    background: #ffeb64;
+}
+.all-notes div {
+    color: #363431;
+}
+.all-lists {
+    background: #ff8e7d;
+    height: 80px;
+    overflow: hidden;
+}
+.all-lists:hover {
+    cursor: pointer;
+    background: #ff7770;
+}
+.all-lists div{
+    overflow: hidden;
+    color: #363431;
+}
+.title {
+    font-weight: bold !important;
+    height: 25px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.text {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.done-item {
+    text-decoration: line-through;
+}
+.select-note:hover {
+    text-decoration: none;
+}
+.select-list:hover {
+    text-decoration: none;
+}
+.fa-edit {
+    color: #0ba34c;
+}
+.fa-trash {
+    color: red;
+}
+.selected-note {
+    background: #faff86;
+    min-height: 50%;
+    margin-bottom: 2rem;
+}
+.selected-list {
+    background: #ff8e7d;
+    min-height: 50%;
+    margin-bottom: 2rem;
+}
+.notes {
+    display: none;
+}
+.lists {
+    display: none;
+}
+.note-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.note-text {
+    margin: 1.5rem .5rem 1.5rem .5rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.list-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.all-list-items {
+    margin: 1.5rem .5rem 1.5rem .5rem;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.all-list-items div {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.45);
+}
+.done-list-items {
+    margin: 0 .5rem 1rem .5rem;
+    padding: 0 .4rem;
+    background: #ffa79a;
+    border-radius: 5px;
+    text-decoration: line-through;
+    font-size: 1.2rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.done-list-items div {
+    border-bottom: 1px solid rgba(160, 160, 160, 0.45);
+}

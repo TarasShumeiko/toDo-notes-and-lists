@@ -1,0 +1,30 @@
+html
+    head
+        title= title
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='style.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+
+    body
+        div
+            div.container
+                div(class='row justify-content-center')
+                    h2(class='mt-5 mb-3 justify-content-center')= header
+
+                    div(class='col-12 d-flex justify-content-between')
+                        a.btn(href= url)
+                            i(class='fas fa-arrow-alt-circle-left mt-2 mb-4')
+                        a.btn(href= url onclick='submitForm()')
+                            i(class='fas fa-check-circle mt-2 mb-4')
+
+                    form(class='col-12' id='my-form' onsubmit='addItem(event)')
+                        input(type='text' name='title' placeholder='title' class='col-12 mb-1 form-control' id='input-title')
+                        div(id='list' class='col-12 mb-1 rounded')
+                        input(type='text' name='listItem' placeholder='new list item...' class='col-9 mb-1 form-control' id='input-text' onkeyup='checkParams()')
+                        input(type='submit' value='add' class='btn-success form-control col-3' id='submit' onclick='cleanField(event)' disabled)
+
+                    div(class='col-11 rounded mt-5 mb-1' id='completed-tasks')
+
+        script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+        script(src='js/lists.js')

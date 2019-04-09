@@ -1,0 +1,27 @@
+html
+    head
+        title= title
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='style.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+
+    body
+        div
+            div.container
+                div(class='col-12 justify-content-start mt-5 ')
+                    a.btn(href= url class='ml-3 mt-4 mb-2')
+                        i(class='fas fa-arrow-alt-circle-left')
+                    a.btn(class='ml-4 mt-4 mb-2' id='edit-note')
+                        i(class='fas fa-edit')
+                    a.btn(class='ml-4 mt-4 mb-2' id='delete-note')
+                        i(class='fas fa-trash')
+
+                div(class='row justify-content-center mt-3')
+                    div(class='selected-note mt-2 w-75 rounded')
+                        each item in allNotes= noteItems
+                            div(id= `${item.id}` class='notes')
+                                div(class='note-title')= `${item.title}`
+                                div(class='note-text')= `${item.text}`
+
+        script(src='js/selectedNote.js')

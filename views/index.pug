@@ -1,0 +1,29 @@
+html
+    head
+        title= title
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        link(rel='stylesheet' href='style.css')
+        link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css')
+        link(rel='stylesheet' href='https://use.fontawesome.com/releases/v5.8.1/css/all.css' integrity='sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf' crossorigin='anonymous')
+
+    body
+        div.container
+            div(class='row justify-content-center')
+                h2(class='mt-5 mb-4')= header
+                a(class='btn btn-md btn-warning col-11 mt-2 mb-3' href= url[0]) Create new Note
+                a(class='btn btn-md btn-danger col-11 mb-5' href= url[1]) Create new List
+
+            div.row
+                div(class='col-6')
+                    each item in allNotes= noteItems
+                        a(href= `${url[2]}:${item.id}` class='select-note')
+                            div(class='all-notes col-12 mb-1 rounded' id=`${item.id}`)
+                                div(class='title text-center')= `${item.title}`
+                                div= `${item.text}`
+                div(class='col-6')
+                    each item in allLists= listItems
+                        a(href= `${url[3]}:${item.id}` class='select-list')
+                            div(class='all-lists col-12 mb-1 rounded' id=`${item.id}`)
+                                div(class='title text-center')= `${item.title}`
+                                div(class='text list-item-text')= `${item.allListItems}`
+                                div(class='text done-item')= `${item.doneListItems}`
