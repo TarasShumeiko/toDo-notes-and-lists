@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./db/db');
 const bodyParser = require('body-parser');
+const port = process.env.PORT || 80;
 
 
 const app = express();
@@ -135,4 +136,4 @@ app.delete(`/deleteList:id`, async function(req, res) {
 });
 
 
-app.listen(3000);
+app.listen(port);
