@@ -1,6 +1,7 @@
 const express = require('express');
 const db = require('./db/db');
 const bodyParser = require('body-parser');
+const https = require('https');
 const port = process.env.PORT || 80;
 
 
@@ -13,6 +14,11 @@ app.set('view engine','pug');
 app.use(express.static('assets'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+
+
+setInterval(function() {
+  https.get('http://todo-notes-and-lists.herokuapp.com/')
+}, 300000);
 
 
 let allNotes = [];
